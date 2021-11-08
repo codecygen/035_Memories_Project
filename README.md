@@ -42,14 +42,14 @@ Server Setup:
 - Then go to the root directory of the project and add the entire project as it is to Github.
 
 Server Side Packages:
-- body-parser
 - cors (Cross-Origin Resource Sharing (CORS))
 - express
 - gitignore
 - mongoose
 - nodemon
+- dotenv
 
-npm i body-parser cors express gitignore mongoose nodemon
+npm i cors express gitignore mongoose nodemon dotenv
 
 Client Side Packages:
 - axios
