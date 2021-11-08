@@ -12,7 +12,11 @@ import dotenv from 'dotenv';
 // CORS is a Cross-Origin Resource
 import cors from 'cors';
 
+import postRoutes from './routes/posts.js';
+
 const app = express();
+
+app.use('/posts', postRoutes);
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json()) // To parse the incoming requests with JSON payloads
@@ -39,3 +43,4 @@ mongoose.connect(process.env.CONNECTION_URL)
     .then(() => app.listen(process.env.PORT, () => {console.log(`Server is runing on port ${process.env.PORT}.`)}))
     .catch((error) => console.error(error))
 ;
+
