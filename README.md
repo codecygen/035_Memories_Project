@@ -57,13 +57,17 @@ Client Side Packages:
 - react-file-base64
 - redux
 - redux-thunk
+- @material-ui/core
 
-npm i axios moment react-file-base64 redux redux-thunk
+npm i axios moment react-file-base64 redux redux-thunk @material-ui/core
 
 How to Add Both Folders to Github?
 Delete .git folder that is installed under 'client' folder
 
-Logic:
+Client Side Logic:
+
+
+Server Side Logic:
 /server/models/postMessage.js
 has the postMessage mongoose model which is sent to
 
