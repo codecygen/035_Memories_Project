@@ -62,3 +62,15 @@ npm i axios moment react-file-base64 redux redux-thunk
 
 How to Add Both Folders to Github?
 Delete .git folder that is installed under 'client' folder
+
+Logic:
+/server/models/postMessage.js
+has the postMessage mongoose model which is sent to
+
+/server/controllers/post.js
+This file handles the route callback functions and exports the callback functions to
+
+/server/routes/post.js
+This section handles the post and get mini routing and finally exports the router to
+
+/server/index.js
