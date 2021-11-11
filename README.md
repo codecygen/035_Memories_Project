@@ -65,6 +65,23 @@ How to Add Both Folders to Github?
 Delete .git folder that is installed under 'client' folder
 
 Client Side Logic:
+All of the files mentioned here have their own "styles.js" file in the same folder level.
+
+/client/src/components/Posts/Post/Post.js'
+Post.js handles individual posts. It is connected to
+
+/client/src/components/Posts/Posts.js
+This one is a container component which preserves all individial post messages
+
+/client/src/components/Form/Form.js
+This one handles the Form compoenent.
+
+/client/src/App.js
+Form.js and Posts.js are sent to App.js
+
+/client/src/index.js
+App.js is connected to the server file.
+
 
 
 Server Side Logic:
