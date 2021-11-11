@@ -64,7 +64,7 @@ npm i axios moment react-file-base64 redux redux-thunk @material-ui/core
 How to Add Both Folders to Github?
 Delete .git folder that is installed under 'client' folder
 
-Client Side Logic:
+Client Side Logic:  
 All of the files mentioned here have their own "styles.js" file in the same folder level.
 
 /client/src/components/Posts/Post/Post.js'
@@ -84,7 +84,7 @@ App.js is connected to the server file.
 
 
 
-Server Side Logic:
+Server Side Logic:  
 /server/models/postMessage.js
 has the postMessage mongoose model which is sent to
 
