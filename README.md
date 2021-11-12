@@ -57,9 +57,10 @@ Client Side Packages:
 - react-file-base64
 - redux
 - redux-thunk
+- react-redux
 - @material-ui/core
 
-npm i axios moment react-file-base64 redux redux-thunk @material-ui/core
+npm i axios moment react-file-base64 redux redux-thunk react-redux @material-ui/core
 
 How to Add Both Folders to Github?
 Delete .git folder that is installed under 'client' folder
@@ -74,7 +75,7 @@ Post.js handles individual posts. It is connected to
 This one is a container component which preserves all individial post messages
 
 /client/src/components/Form/Form.js
-This one handles the Form compoenent.
+This one handles the Form component.
 
 /client/src/App.js
 Form.js and Posts.js are sent to App.js
