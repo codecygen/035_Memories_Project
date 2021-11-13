@@ -16,8 +16,6 @@ import postRoutes from './routes/posts.js';
 
 const app = express();
 
-app.use('/posts', postRoutes);
-
 app.use(express.urlencoded({extended: true}));
 app.use(express.json()) // To parse the incoming requests with JSON payloads
 
@@ -35,6 +33,7 @@ app.use(express.json()) // To parse the incoming requests with JSON payloads
 // });
 
 app.use(cors());
+app.use('/posts', postRoutes);
 dotenv.config();
 // process.env.CONNECTION_URL
 // process.env.PORT
