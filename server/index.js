@@ -6,7 +6,6 @@
 // Also, instead of "test": "echo \"Error: no test specified\" && exit 1"
 // add "start": "nodemon index.js"
 import express from 'express';
-// import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 // CORS is a Cross-Origin Resource
@@ -16,8 +15,8 @@ import postRoutes from './routes/posts.js';
 
 const app = express();
 
-app.use(express.urlencoded({extended: true}));
-app.use(express.json()) // To parse the incoming requests with JSON payloads
+app.use(express.urlencoded({ limit: '50mb', extended: true }));
+app.use(express.json({limit: '50mb'})) // To parse the incoming requests with JSON payloads
 
 // Since Express 4.16+ the body parsing functionality has become builtin with express
 // So, you can simply do
