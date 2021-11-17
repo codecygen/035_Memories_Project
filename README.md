@@ -59,8 +59,9 @@ Client Side Packages:
 - redux-thunk
 - react-redux
 - @material-ui/core
+- @material-ui/icons
 
-npm i axios moment react-file-base64 redux redux-thunk react-redux @material-ui/core
+npm i axios moment react-file-base64 redux redux-thunk react-redux @material-ui/core @material-ui/icons
 
 How to Add Both Folders to Github?
 Delete .git folder that is installed under 'client' folder
