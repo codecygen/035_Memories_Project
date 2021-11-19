@@ -1,3 +1,6 @@
+Tutorial Link:
+https://www.youtube.com/watch?v=aibtHnbeuio&t=1595s
+
 Server Setup:
 - Create 2 folders 'client' and 'server'
 - Inside the 'client' folder type npm init
